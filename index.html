@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>两会</title>
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+<link rel="stylesheet" href="./css/aut.css">
+<style>
+ 
+.containers {
+  width: 1000px;
+ margin: auto;
+}
+
+
+.plot_title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8f8f8;
+  margin-bottom: 60px;
+}
+
+
+.plot {
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+/* 左侧图片模块 */
+.plot_image {
+  width: 450px;
+  height: 90%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 95, 204, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.plot_image:hover {
+  transform: scale(1.02);
+}
+
+.plot_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.plot_info {
+  flex: 1;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(0, 95, 204, 0.15);
+  padding: 40px;
+}
+
+/* 信息表格 */
+.info_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info_table th {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #005fcc;
+  padding: 15px 0;
+  border-bottom: 6px solid #005fcc20;
+}
+
+.info_table td {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 20px 0;
+  color: #333;
+  border-bottom: 3px solid #999;
+}
+
+.info_table .info-item {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!--container start-->
+<div class="container">
+
+  <!--header start-->
+  <div class="header" id="header">
+    <a href="index.html">
+    <img src="images/i2.jpg">
+    </a>
+  </div>
+  <!--header end-->
+  
+  <!--nav start-->
+  <div class="nav">
+    <ul class="nav_ul">
+      <li class="item"><a href="index.html">首页</a></li>
+      <li class="item"><a href="view1.html">两会简介</a></li>
+      <li class="item"><a href="view2.html">人物简介</a></li>
+      <li class="item"><a href="view3.html">精彩照片</a></li>
+      <li class="item"><a href="index8.html">现场测验</a></li>
+      <li class="item"><a href="view4.html">国际关注与影响</a></li>
+      <li class="item"><a href="view5.html">热门评论</a></li>
+      <li class="item"><a href="view6.html">举办意义</a></li>
+      <li class="item"><a href="./video/88888.mp4">现场视频</a></li>
+    </ul>
+  </div>
+  <!--nav end-->
+
+  <!--wrapper start-->
+  <div class="containers">
+    <h1 class="plot_title">两会基本信息</h1>
+    
+    <div class="plot">
+      <!-- 左侧图片 -->
+      <div class="plot_image">
+        <img src="images/t2.jpg" alt="两会现场照片">
+      </div>
+      
+      <!-- 右侧信息 -->
+      <div class="plot_info">
+        <table class="info_table">
+          <tr>
+            <th>两会名称</th>
+            <td>
+              <span class="info-item">全国人民代表大会</span><br>
+              <span class="info-item">中国人民政治协商会议</span>
+            </td>
+          </tr>
+          <tr>
+            <th>英文名称</th>
+            <td>
+              <span class="info-item">NPC（全国人大）</span><br>
+              <span class="info-item">CPPCC（全国政协）</span>
+            </td>
+          </tr>
+          <tr>
+            <th>举办时间</th>
+            <td>
+              全国人大：3月5日开幕，会期约7天<br>
+              全国政协：3月4日开幕，会期约6天
+            </td>
+          </tr>
+          <tr>
+            <th>召开频率</th>
+            <td>
+              每年举行一次全体会议<br>
+              每五年为一届（每年召开一次会议）
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--wrapper end-->
+
+  <!--footer start-->
+  <div class="footer">
+    <!--footer_nav start-->
+    <div class="footer_nav">
+      <a href="view1.html">两会简介</a>
+      <a href="view2.html">人物简介</a>
+      <a href="view3.html">精彩照片</a>
+      <a href="index8.html">现场测验</a>
+      <a href="view5.html">热门评论</a>
+      <a href="view4.html">国际关注与影响</a>
+      <a href="view6.html">举办意义</a>
+      <a href="#header">回到顶部</a>
+    </div>
+    <!--footer_nav end-->
+    <!--footer_logo start-->
+    <div class="footer_logo">
+      <img src="images/i2.jpg">
+    </div>
+    <!--footer_logo end-->
+    <!--footer_copyright start-->
+    <div class="footer_copyright">
+     
+      <p><b>把握时代脉搏，共绘发展新片 </b></p>
+      <p style="text-align: center; font-size: 18px ; color: #fff;">陆军军事交通学院汽车士官学校©9大队27队杜明洋 魏丹锋 卢正杨版权所有</p>
+    </div>
+    <!--footer_copyright end-->
+  </div>
+  <!--footer end-->
+  
+</div>
+<!--container end-->
+
+</body>
+</html>
